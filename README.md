@@ -53,6 +53,20 @@ ln -s "$PWD/extras-skills/skills/longbridge-lbti" ~/.gemini/skills/longbridge-lb
 ln -s "$PWD/extras-skills/skills/longbridge-lbti" ~/.opencode/skills/longbridge-lbti # OpenCode
 ```
 
+### Claude Desktop / claude.ai / mobile (true GUI apps, no CLI)
+
+These aren't covered by the `npx skills` installer — they use their own **Settings → Skills** upload flow, and only accept a `.zip` with the skill folder's contents at the zip **root** (not nested inside another folder).
+
+```bash
+git clone https://github.com/longbridge/extras-skills.git
+cd extras-skills/skills/longbridge-lbti
+zip -r ../longbridge-lbti.zip .
+```
+
+Then in Claude Desktop (or claude.ai / the mobile app): **Settings → Skills → "+" → Create skill → upload `longbridge-lbti.zip`**. It syncs across desktop, browser, and mobile automatically since it's tied to your account, not the device. Toggle it on/off per-conversation like any other skill.
+
+> No other mainstream desktop chat app (ChatGPT Desktop, Gemini app, etc.) currently supports third-party Agent-Skills-spec uploads — only Claude's apps do as of this writing.
+
 ### Update
 
 ```bash
@@ -60,6 +74,8 @@ npx skills update -g
 # or a single skill:
 npx skills update longbridge-lbti -g
 ```
+
+Claude Desktop / claude.ai skills don't auto-update — re-zip and re-upload (same steps as install) to replace an existing custom skill with a new version.
 
 ---
 
