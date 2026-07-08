@@ -1,0 +1,36 @@
+{
+  "id": "extras",
+  "name": "extras",
+  "version": "1.0.0",
+  "description": "Non-financial Longbridge Agent Skills: quizzes, growth/engagement tools, and similar.",
+  "author": {
+    "name": "Longbridge",
+    "url": "https://longbridge.com"
+  },
+  "homepage": "https://github.com/longbridge/extras-skills",
+  "repository": "https://github.com/longbridge/extras-skills",
+  "license": "MIT",
+  "keywords": [
+    "longbridge",
+    "extras",
+    "engagement",
+    "quiz"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Longbridge Extras",
+    "shortDescription": "Non-financial Longbridge skills: quizzes and engagement tools.",
+    "longDescription": "Extras bundles non-trading Longbridge skills that don't belong in the core securities skill set — starting with the LBTI investing-personality quiz.",
+    "developerName": "Longbridge",
+    "category": "Lifestyle",
+    "capabilities": [
+      "Read"
+    ],
+    "websiteURL": "https://longbridge.com",
+    "defaultPrompt": [
+      "投资风格测试",
+      "測下我係邊種投資者"
+    ],
+    "brandColor": "#00DBB6"
+  }
+}
