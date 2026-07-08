@@ -1,0 +1,75 @@
+{
+  "_comment": "8 种投资人格结果内容。文案取自成品卡。image 为对应结果卡文件名（assets/ 下）。dimensions 为卡面 5 维小柱状的示意值（0-3 级，已烧进成品图，此处仅备份/供未来动态版使用）。en_color 为英文副标在卡面上的颜色。",
+  "deep-diver": {
+    "code": "FLC", "en": "The Deep Diver", "zh": "深潜猎人", "hk": "深潛獵人",
+    "image": "deep-diver.png", "en_color": "#2fb8c6",
+    "quote_zh": "不是不出手，是等我真的研究透了才动。",
+    "quote_hk": "唔係唔出手，係等我真係研究透先動。",
+    "desc_zh": "不跟风、不追炒，靠自己做功课建立信念，看中就重仓长揸。",
+    "desc_hk": "唔跟風、唔追炒，靠自己做功課建立信念，睇中就重倉長揸。",
+    "dimensions": { "交易频率": 1, "持仓集中": 3, "风险偏好": 1, "持仓周期": 3, "盈亏现状": 3 }
+  },
+  "ark-captain": {
+    "code": "FLD", "en": "The Ark Captain", "zh": "方舟舰长", "hk": "方舟艦長",
+    "image": "ark-captain.png", "en_color": "#4a90ff",
+    "quote_zh": "不需要 all in 一个，分散好组合才是长胜之道。",
+    "quote_hk": "唔需要 all in 一個，分散好個組合先係長勝之道。",
+    "desc_zh": "多市场多资产均衡布局，ETF＋个股混搭，不把鸡蛋放同一篮。",
+    "desc_hk": "多市場多資產均衡布局，ETF＋個股混搭，唔把雞蛋放同一籃。",
+    "dimensions": { "交易频率": 1, "持仓集中": 1, "风险偏好": 1, "持仓周期": 3, "盈亏现状": 3 }
+  },
+  "earnings-sniper": {
+    "code": "FSC", "en": "The Earnings Sniper", "zh": "财报狙击手", "hk": "財報狙擊手",
+    "image": "earnings-sniper.png", "en_color": "#5a6cff",
+    "quote_zh": "不出手就算，出手就要精准。",
+    "quote_hk": "唔出手就算，出手就要精準。",
+    "desc_zh": "专吃业绩／并购／政策消息，时机到了重仓快手，不拖不等。",
+    "desc_hk": "專食業績／併購／政策消息，時機到了重倉快手，唔拖唔等。",
+    "dimensions": { "交易频率": 2, "持仓集中": 3, "风险偏好": 3, "持仓周期": 1, "盈亏现状": 2 }
+  },
+  "sector-rotator": {
+    "code": "FSD", "en": "The Sector Rotator", "zh": "板块轮动客", "hk": "板塊輪動客",
+    "image": "sector-rotator.png", "en_color": "#2fb8c6",
+    "quote_zh": "热点是会转的，我只是跟着钱走。",
+    "quote_hk": "熱點係會轉嘅，我只係跟住個錢去。",
+    "desc_zh": "追踪哪个行业当炒、资金流去哪，灵活换仓，不死守一个板块。",
+    "desc_hk": "追蹤哪個行業當炒、資金流去邊，靈活換倉，唔死守一個板塊。",
+    "dimensions": { "交易频率": 3, "持仓集中": 2, "风险偏好": 2, "持仓周期": 2, "盈亏现状": 2 }
+  },
+  "trend-believer": {
+    "code": "MLC", "en": "The Trend Believer", "zh": "赛道信徒", "hk": "賽道信徒",
+    "image": "trend-believer.png", "en_color": "#3a9bff",
+    "quote_zh": "选对了方向，之后就是等时间帮你赚。",
+    "quote_hk": "揀啱個方向，之後就係等時間幫你賺。",
+    "desc_zh": "重仓押大趋势，长线持有，短期跌也不会乱手脚。",
+    "desc_hk": "重倉押大趨勢，長線持有，短期跌都唔會亂手腳。",
+    "dimensions": { "交易频率": 1, "持仓集中": 3, "风险偏好": 3, "持仓周期": 3, "盈亏现状": 3 }
+  },
+  "tailwind-sailor": {
+    "code": "MLD", "en": "The Tailwind Sailor", "zh": "顺风航海家", "hk": "順風航海家",
+    "image": "tailwind-sailor.png", "en_color": "#f5a623",
+    "quote_zh": "我不是估市，我是懂得跟着势走。",
+    "quote_hk": "我唔係估市，我係識得跟住個勢走。",
+    "desc_zh": "跟大方向分散布局，有势就拿着，势走了就转身换仓，不执着。",
+    "desc_hk": "跟大方向分散布局，有勢就揸住，勢走了就轉身換倉，唔執着。",
+    "dimensions": { "交易频率": 2, "持仓集中": 2, "风险偏好": 2, "持仓周期": 2, "盈亏现状": 2 }
+  },
+  "lightning-trader": {
+    "code": "MSC", "en": "The Lightning Trader", "zh": "闪电交易者", "hk": "閃電交易者",
+    "image": "lightning-trader.png", "en_color": "#2fcc71",
+    "quote_zh": "我赚的是情绪波动的钱，不是坐着等的钱。",
+    "quote_hk": "我食嘅係情緒波動嘅錢，唔係坐喺度等嘅錢。",
+    "desc_zh": "快进快出、重仓短炒，靠市场情绪和波动搵食，止损从不手软。",
+    "desc_hk": "快入快出、重倉短炒，靠市場情緒同波動搵食，止損從不手軟。",
+    "dimensions": { "交易频率": 3, "持仓集中": 3, "风险偏好": 3, "持仓周期": 1, "盈亏现状": 2 }
+  },
+  "sentiment-ranger": {
+    "code": "MSD", "en": "The Sentiment Ranger", "zh": "情绪游侠", "hk": "情緒遊俠",
+    "image": "sentiment-ranger.png", "en_color": "#2ec7a6",
+    "quote_zh": "哪里有得炒我就去哪，但不会死守。",
+    "quote_hk": "邊度有嘢炒我就去邊度，但唔會死守。",
+    "desc_zh": "广撒网捕热点，小注多标的，快进快出不恋战。",
+    "desc_hk": "廣撒網捕熱點，小注多標的，快入快出唔戀戰。",
+    "dimensions": { "交易频率": 3, "持仓集中": 1, "风险偏好": 2, "持仓周期": 1, "盈亏现状": 1 }
+  }
+}

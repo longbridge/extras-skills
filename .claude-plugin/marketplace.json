@@ -1,0 +1,37 @@
+{
+  "name": "extras-skills",
+  "owner": {
+    "name": "longbridge",
+    "url": "https://github.com/longbridge"
+  },
+  "metadata": {
+    "description": "Non-trading, non-financial Agent Skills for Longbridge — engagement, marketing, and lifestyle features that sit alongside the core securities skill set in longbridge/skills.",
+    "version": "1.0.0",
+    "pluginRoot": "./"
+  },
+  "plugins": [
+    {
+      "name": "extras",
+      "source": "./",
+      "description": "Longbridge extras: non-financial skills (quizzes, growth/engagement tools, and similar) that don't belong in the core trading skill set.",
+      "version": "1.0.0",
+      "author": {
+        "name": "longbridge",
+        "url": "https://longbridge.com"
+      },
+      "homepage": "https://github.com/longbridge/extras-skills",
+      "repository": "https://github.com/longbridge/extras-skills",
+      "license": "MIT",
+      "keywords": [
+        "longbridge",
+        "extras",
+        "engagement",
+        "quiz"
+      ],
+      "category": "lifestyle",
+      "skills": [
+        "./skills/"
+      ]
+    }
+  ]
+}
