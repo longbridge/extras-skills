@@ -8,18 +8,25 @@ These skills are **prompt-only**: no Longbridge CLI, MCP server, or login requir
 
 ## Install
 
-### npx / bun (recommended)
+### npx / bun (recommended — works with 50+ desktop AI tools)
 
 ```bash
-# Global install (lands in ~/.claude/skills/, reachable from any project)
+# Global install, all agents it detects on your machine (lands in ~/.agents/skills/,
+# symlinked into each tool's own skills directory — Claude Code, Cursor, Windsurf,
+# Cline, Codex, Gemini CLI, OpenCode, Amp, Antigravity, and more)
 npx skills add longbridge/extras-skills -g
 bunx skills add longbridge/extras-skills -g
+
+# Target specific desktop tools only
+npx skills add longbridge/extras-skills -g --agent cursor windsurf claude-code
 
 # Install just one skill
 npx skills add longbridge/extras-skills -g --skill longbridge-lbti
 ```
 
-> ⚠️ `npx skills` defaults to **project** scope. Without `-g` the skill lands in the current directory's `.claude/skills/` instead of the user-wide one — use `-g` unless you specifically want a project-local install.
+> ⚠️ `npx skills` defaults to **project** scope. Without `-g` the skill lands in the current directory's `.agents/skills/` instead of the user-wide one — use `-g` unless you specifically want a project-local install.
+>
+> Run `npx skills add longbridge/extras-skills -g --agent '*'` to install to every desktop AI tool the installer supports in one shot, or `npx skills add longbridge/extras-skills -g -l` to just list what's available without installing.
 
 ### Claude Code plugin marketplace
 
@@ -33,6 +40,17 @@ npx skills add longbridge/extras-skills -g --skill longbridge-lbti
 ```bash
 codex plugin marketplace add longbridge/extras-skills
 codex plugin add extras@extras-skills
+```
+
+### Manual install (any Agent-Skills-compatible tool)
+
+Skills are plain Markdown + JSON/assets, so any tool that reads the [Agent Skills spec](https://agentskills.io/specification) can use them without the installer — clone the repo and symlink the skill folder into that tool's skills directory:
+
+```bash
+git clone https://github.com/longbridge/extras-skills.git
+ln -s "$PWD/extras-skills/skills/longbridge-lbti" ~/.claude/skills/longbridge-lbti   # Claude Code
+ln -s "$PWD/extras-skills/skills/longbridge-lbti" ~/.gemini/skills/longbridge-lbti   # Gemini CLI
+ln -s "$PWD/extras-skills/skills/longbridge-lbti" ~/.opencode/skills/longbridge-lbti # OpenCode
 ```
 
 ### Update
