@@ -55,7 +55,17 @@ ln -s "$PWD/extras-skills/skills/longbridge-lbti" ~/.opencode/skills/longbridge-
 
 ### Claude Desktop / claude.ai / mobile (true GUI apps, no CLI)
 
-These aren't covered by the `npx skills` installer — they use their own **Settings → Skills** upload flow, and only accept a `.zip` with the skill folder's contents at the zip **root** (not nested inside another folder).
+These aren't covered by the `npx skills` installer — they use their own **Settings → Skills** upload flow, which only accepts a `.zip` with the skill folder's contents at the zip **root** (not nested inside another folder).
+
+**Prebuilt zip (no clone needed):**
+
+```
+https://github.com/longbridge/extras-skills/releases/latest/download/longbridge-lbti.zip
+```
+
+Download that, then in Claude Desktop (or claude.ai / the mobile app): **Settings → Skills → "+" → Create skill → upload `longbridge-lbti.zip`**. It syncs across desktop, browser, and mobile automatically since it's tied to your account, not the device. Toggle it on/off per-conversation like any other skill.
+
+**Build it yourself instead** (e.g. testing an uncommitted change):
 
 ```bash
 git clone https://github.com/longbridge/extras-skills.git
@@ -63,9 +73,9 @@ cd extras-skills/skills/longbridge-lbti
 zip -r ../longbridge-lbti.zip .
 ```
 
-Then in Claude Desktop (or claude.ai / the mobile app): **Settings → Skills → "+" → Create skill → upload `longbridge-lbti.zip`**. It syncs across desktop, browser, and mobile automatically since it's tied to your account, not the device. Toggle it on/off per-conversation like any other skill.
-
 > No other mainstream desktop chat app (ChatGPT Desktop, Gemini app, etc.) currently supports third-party Agent-Skills-spec uploads — only Claude's apps do as of this writing.
+>
+> **Maintainers**: the prebuilt zip is attached to a [GitHub Release](https://github.com/longbridge/extras-skills/releases), not committed to the repo — committing a 13MB binary alongside its source would double repo size and bloat further with every future edit, since git can't diff binaries efficiently. Cut a new release (tag `<skill>-vX.Y.Z`, attach a freshly built zip) whenever a GUI-app-relevant skill changes.
 
 ### Update
 
