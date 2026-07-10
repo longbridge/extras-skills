@@ -30,3 +30,7 @@ Thumbs.db
 # Build artefacts
 dist/
 build/
+
+# npx skills installer artifacts (local install testing)
+/.agents/
+/skills-lock.json
