@@ -101,9 +101,9 @@ description: 長橋 LBTI 投資風格測試。當用戶說「投資風格測試 
 
 - 8 張 `assets/qr/{persona}.png` 編碼的就係對應人格嘅結果卡直鏈：
   ```
-  https://cdn.jsdelivr.net/gh/longbridge/extras-skills@longbridge-lbti-v1.0.0/skills/longbridge-lbti/assets/{persona}.png
+  https://cdn.jsdelivr.net/gh/longbridge/extras-skills@longbridge-lbti-v1.0.1/skills/longbridge-lbti/assets/{persona}.png
   ```
-  用 release tag（`@longbridge-lbti-v1.0.0`）而唔係 `@main`，係為咗打印/分發出去嘅二維碼**穩定、抗 jsDelivr 分支緩存、可版本回滾**。卡面設計已定稿唔會變，tag 鏈長期有效。
+  用 release tag（`@longbridge-lbti-v1.0.1`）而唔係 `@main`，係為咗打印/分發出去嘅二維碼**穩定、抗 jsDelivr 分支緩存、可版本回滾**。卡面設計已定稿唔會變，tag 鏈長期有效。
 - 掃碼體驗：手機瀏覽器直接開卡圖 → 長按存相簿 / 分享。無需登錄、無需任何 App。
 - ⚠️ **切勿再用 `https://claude.ai/code/artifact/...` 之類鏈接**——嗰啲要登錄／權限先開得到，絕大多數用戶掃咗係白屏。舊版二維碼曾誤指向呢個地址，已修正。
 
